@@ -114,7 +114,7 @@
       }
       err.textContent = '';
 
-      text = 'Halo tim SIMPUS Nusantara, saya ingin meminta demo aplikasi dan informasi kemitraan.\n'
+      text = 'Halo tim SIMPUS Nusantara, saya ingin bergabung mendapatkan manfaat dan konsultasi transformasi layanan puskesmas.\n'
         + '\n• Nama: ' + nama
         + '\n• WhatsApp: ' + kontak
         + '\n• Mewakili: ' + v('peran')
