@@ -394,6 +394,202 @@ footer .wrap { display: flex; flex-wrap: wrap; justify-content: space-between; a
   .floating-wa { bottom: 18px; right: 18px; padding: 10px 14px; font-size: 13px; }
 }
 
+/* Section Dinkes Bergabung */
+.dinkes-section {
+  background: var(--paper);
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+.dinkes-header {
+  max-width: 800px;
+  margin-bottom: 32px;
+}
+.dinkes-stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+  margin-bottom: 36px;
+}
+@media (max-width: 820px) {
+  .dinkes-stats { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 480px) {
+  .dinkes-stats { grid-template-columns: 1fr; }
+}
+.ds-item {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 18px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  box-shadow: 0 4px 12px rgba(29,59,71,.03);
+}
+.ds-num {
+  font-family: var(--display);
+  font-size: 32px;
+  font-weight: 800;
+  color: var(--accent);
+  line-height: 1.1;
+}
+.ds-label {
+  font-size: 13.5px;
+  color: var(--muted);
+  font-weight: 600;
+}
+
+/* Filter Wilayah */
+.dinkes-filter {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 28px;
+}
+.df-btn {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  color: var(--muted);
+  padding: 8px 16px;
+  border-radius: 99px;
+  font-size: 13.5px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all .2s ease;
+}
+.df-btn:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+.df-btn.active {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #fff;
+  box-shadow: 0 4px 12px rgba(6,112,122,.25);
+}
+
+/* Grid Cards Dinkes */
+.dinkes-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+@media (max-width: 960px) {
+  .dinkes-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 600px) {
+  .dinkes-grid { grid-template-columns: 1fr; }
+}
+
+.dinkes-card {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 20px 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  box-shadow: 0 2px 10px rgba(29,59,71,.03);
+  transition: transform .2s ease, box-shadow .2s ease, border-color .2s ease;
+}
+.dinkes-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 24px rgba(29,59,71,.08);
+  border-color: rgba(6,112,122,.3);
+}
+
+.dc-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 4px;
+}
+.dc-icon {
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
+  background: var(--tint);
+  color: var(--accent);
+  display: grid;
+  place-items: center;
+}
+.dc-status {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 11.5px;
+  font-weight: 700;
+  color: #2e7d32;
+  background: #e9f6dc;
+  padding: 3px 9px;
+  border-radius: 99px;
+}
+.dc-status::before {
+  content: "";
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #2e7d32;
+  display: inline-block;
+}
+
+.dinkes-card h3 {
+  font-family: var(--display);
+  font-size: 17.5px;
+  line-height: 1.3;
+  margin: 0;
+  color: var(--ink);
+}
+.dc-province {
+  font-size: 13px;
+  color: var(--muted);
+  margin: 0;
+}
+.dc-meta {
+  margin-top: 10px;
+  padding-top: 12px;
+  border-top: 1px solid var(--line);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 12.5px;
+  color: var(--ink);
+  gap: 8px;
+}
+.dc-meta span:first-child {
+  color: var(--accent);
+}
+.dc-meta span:last-child {
+  color: var(--muted);
+  font-size: 12px;
+  text-align: right;
+}
+
+/* Callout */
+.dinkes-callout {
+  margin-top: 40px;
+  background: var(--surface);
+  border: 1.5px dashed rgba(6,112,122,.3);
+  border-radius: 16px;
+  padding: 24px 28px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+}
+@media (max-width: 820px) {
+  .dinkes-callout { flex-direction: column; align-items: flex-start; }
+}
+.dc-callout-text h3 {
+  font-size: 19px;
+  margin-bottom: 4px;
+}
+.dc-callout-text p {
+  color: var(--muted);
+  font-size: 14.5px;
+  margin: 0;
+}
+
 /* Responsif */
 .hero-grid > *, .screens > *, .offline > *, .together > *, .share > *, .cta .grid > *, .cheaper > *, .features-grid-cards > * { min-width: 0; }
 .app { max-width: 100%; }

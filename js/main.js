@@ -51,6 +51,31 @@
     });
   });
 
+  // Filter Wilayah Dinkes
+  var filterBtns = Array.prototype.slice.call(document.querySelectorAll('.df-btn'));
+  var dinkesCards = Array.prototype.slice.call(document.querySelectorAll('.dinkes-card'));
+  if (filterBtns.length && dinkesCards.length) {
+    filterBtns.forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        var region = btn.getAttribute('data-filter');
+        filterBtns.forEach(function (b) {
+          b.classList.remove('active');
+          b.setAttribute('aria-selected', 'false');
+        });
+        btn.classList.add('active');
+        btn.setAttribute('aria-selected', 'true');
+
+        dinkesCards.forEach(function (card) {
+          if (region === 'all' || card.getAttribute('data-region') === region) {
+            card.style.display = 'flex';
+          } else {
+            card.style.display = 'none';
+          }
+        });
+      });
+    });
+  }
+
   // Tombol bergabung mengisi peran
   document.querySelectorAll('[data-role]').forEach(function (a) {
     a.addEventListener('click', function () {
