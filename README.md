@@ -8,7 +8,7 @@ Landing page resmi untuk **SIMPUS Nusantara** oleh KLIKMEDIS · PT Mitra Bestari
 - **Bridging BPJS PCare & Mobile JKN:** Antrean online, validasi kepesertaan NIK instan, dan klaim tanpa double-entry.
 - **SATUSEHAT Kemenkes RI (Permenkes No. 24/2022):** Standar variabel data FHIR Encounter, Condition, Observation, Procedure, dan Medication.
 - **100% Tangguh Offline:** Pelayanan posyandu dan puskesmas keliling (pusling) di daerah terpencil tetap berjalan normal tanpa internet.
-- **Model Tata Kelola Gotong Royong:** Voting prioritas fitur tiap 3 bulan, transparansi pembiayaan, dan jaminan *Software Escrow*.
+- **Model Tata Kelola Gotong Royong:** Voting prioritas fitur tiap 3 bulan, pendampingan implementasi tuntas, dan jaminan *Software Escrow*.
 
 ## 🚀 Live Demo
 Website ini dapat diakses secara statis melalui **GitHub Pages**:
